@@ -39,3 +39,23 @@
     color:white;
     text-decoration: underline;
 }
+/* short cut section */
+.short{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    background-color:white;
+    color:var(--bs-primary);
+    padding: 10px 19px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+@media (max-width: 768px) {
+    .short{
+        bottom: 20px;
+        right: 30px;
+    }
+    
+}
