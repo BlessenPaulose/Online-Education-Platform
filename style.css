@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 *{
     margin: 0%;
     padding: 0;
@@ -46,12 +49,29 @@
     right: 40px;
     background-color:white;
     color:var(--bs-primary);
-    padding: 10px 19px;
-    border-radius: 5px;
+    padding: 5px 10px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 30px;
+    border-radius: 100px;
+    border: 5px solid var(--bs-primary);
+
 }
+.short:hover{
+    color:white;
+    background-color:var(--bs-primary);
+    border: 5px solid white;
+}
+/* image animation */
+.image {
+    transition: transform 0.3s;
+    animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-13px); }
+    100% { transform: translateY(0); }
+}
+
 @media (max-width: 768px) {
     .short{
         bottom: 20px;
